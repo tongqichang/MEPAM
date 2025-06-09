@@ -1,18 +1,18 @@
-# MEPCA
+# MEPAM
 a evidence-based Question-Answering system：Microbial Enzyme Production and Catalytic Activit
 ## 效果图
 ![问答系统效果图](img/qa_show.png)
 ## Before using the QAsystem
 Please download the QAsystem:
 ```bash
-wget -O MEPCA_QA.tar "https://example.com/path/to/MEPCA_QA.tar"
+wget -O MEPAM_QA.tar "https://example.com/path/to/MEPAM_QA.tar"
 ```
 ## 技术架构
-MEPCA_NER:基于ontogpt的实体识别
-MEPCA_QA：基于graphrag的问答系统
+MEPAM_NER:基于ontogpt的实体识别
+MEPAM_QA：基于graphrag的问答系统
 ## 快速开始
-## MEPCA_NER
-您可以通过MEPCA_NER快速进行图谱的构建工作，如果仅需要使用问答系统可直接跳转MEPCA_QA部分
+## MEPAM_NER
+您可以通过MEPAM_NER快速进行图谱的构建工作，如果仅需要使用问答系统可直接跳转MEPAM_QA部分
 ### 1. 环境配置
 ```bash
 conda env create -f environment.yaml
@@ -21,44 +21,47 @@ poetry install
 ```
 在运行代码前请设置您的api key和ini文件中的基本设置
 通过设置.env文件保存您的api key也可以通过export设置
- ```export OPENAI_API_KEY=your_api_key_here 
+ ```bash
+export OPENAI_API_KEY=your_api_key_here 
  ```
 1.1 安装结果评估模型ollama/qwen2.5:14b
 ```bash
-curl -fsSL https://ollama.com/install.sh | sh
+export OLLAMA_MIRROR="https://ghproxy.cn/https://github.com/ollama/ollama/releases/latest/download"
+curl -fsSL https://ollama.com/install.sh | sed "s|https://ollama.com/download|$OLLAMA_MIRROR|g" | sh
 ollama run qwen2.5:14b
 ```
 ### 2. 三元组提取
 2.1 pdf提取信息
-请在使用前修改ini配置
+
 ```bash
-python MEPCA_NER/scripts/grobid_pdf2csv.py MEPCA_NER/scripts/pdf2txt.ini
-python MEPCA_NER/scripts/cermine_pdf2csv.py MEPCA_NER/scripts/pdf2txt.ini
-python MEPCA/MEPCA_NER/scripts/combine.py
+python MEPAM_NER/scripts/grobid_pdf2csv.py MEPAM_NER/scripts/pdf2txt.ini
+python MEPAM_NER/scripts/cermine_pdf2csv.py MEPAM_NER/scripts/pdf2txt.ini
+python MEPAM/MEPAM_NER/scripts/combine.py
  ```
 2.2 PDF提取的准确度评估
+请在使用前修改ini配置
 ```bash
-python MEPCA_NER/scripts/parse_metric.py MEPCA_NER/scripts/pdf2txt.ini
+python MEPAM_NER/scripts/parse_metric.py MEPAM_NER/scripts/pdf2txt.ini
  ```
-#### 在提取前请您根据noid3/100txtlist.xlsx中的名单下载对应文献以便进行测试
+#### 在提取前请您根据data/100txtlist.xlsx中的名单下载对应文献以便进行测试
 
 2.3 LinkML提取三元组
 ```bash
-bash MEPCA_NER/scripts/LinkML.sh
+bash MEPAM_NER/scripts/LinkML.sh
 ```
 2.4 NonLinkML提取三元组
 ```bash
-python MEPCA_NER/scripts/getjson.py --input_folder MEPCA_NER/noid3/100txt/ --output_folder noid3/nonlinkml/qwen/  --api_key your_api_key_here --model openai/qwen2.5-72b-instruct --base_url https://dashscope.aliyuncs.com/compatible-mode/v1 
+python MEPAM_NER/scripts/getjson.py --input_folder MEPAM_NER/data/100txt/ --output_folder data/nonlinkml/qwen/  --api_key your_api_key_here --model openai/qwen2.5-72b-instruct --base_url https://dashscope.aliyuncs.com/compatible-mode/v1 
 ```
 2.5 结果评估
 ```bash
-python MEPCA_NER/scripts/ner_metric.py ner_metric.ini
+python MEPAM_NER/scripts/ner_metric.py ner_metric.ini
 ```
-####在noid3文件中我们保存了100篇文献的linkml、nonlinkml以及人工提取结果，以及最终评估的效果
+####在data文件中我们保存了100篇文献的linkml、nonlinkml以及人工提取结果，以及最终评估的效果
 ### 3. 问答系统的使用
 3.1 启动Ollama服务
 ```bash
-cd MEPCA_QA/ollama
+cd MEPAM_QA/ollama
 sh start_service.sh
 ```
 验证ollama服务是否运行
