@@ -1,0 +1,225 @@
+id: http://w3id.org/ontogpt/knowledge_graph
+name: knowledge_graph
+title: Microbiome Enzyme Fermentation Knowledge Graph
+description: A schema for representing the relationships between microbiomes, enzymes, fermentation conditions, and their effects on enzyme activity and production.
+license: https://creativecommons.org/publicdomain/zero/1.0/
+prefixes:
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  enzyme: http://w3id.org/ontogpt/knowledge_graph/
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  MESH: http://identifiers.org/mesh/
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITAXON_
+  bp: http://w3id.org/ontogpt/biological-process-template
+  linkml: https://w3id.org/linkml/
+
+default_prefix: enzyme
+default_range: string
+
+imports:
+  - linkml:types
+  - core
+
+classes:
+  EnzymeAnnotations:
+    tree_root: true
+    description: A collection linking microbiomes, enzymes, production conditions, activity conditions.
+    attributes:
+      microbiome:
+        description: A semicolon-separated list of microbiome or bacterial species explicitly mentioned in the text. Include only the names of valid species, avoiding any specific variants, forms, or generic terms. Do not infer or assume anything. If no content are found, omit the "microbiome" field from entities. Ensure the list does not end with a delimiter or remove the last delimiter.
+        multivalued: true
+        range: Microbiome
+
+      enzyme:
+        description: A semicolon-separated list of all enzyme names produced by the microbiomes explicitly mentioned in the text. Include any specific variants or forms of the enzymes. Include only the names of the enzymes without any qualifiers, specifications, or additional details. Do not infer or assume anything. If no content are found, omit the "enzyme" field from entities. Ensure the list does not end with a delimiter or remove the last delimiter.
+        multivalued: true
+        range: Enzyme
+
+      substrate:
+        description: >-
+          A semicolon-separated list of substrates specifically catalyzed by the enzymes explicitly mentioned in the text, do not infer or assume any content. Include only the names of the substrates, ensuring they are specific molecules involved in enzymatic reactions. Exclude inducers, salts (e.g., NaCl, NaBr), biochemical reactions, and unrelated compounds. Focus solely on the molecules that undergo transformation by the enzymes. Do not infer or assume anything. If no content are found, omit the "substrate" field from entities. Ensure the list does not end with a delimiter or remove the last delimiter.
+        multivalued: true
+        range: Substrate
+
+      enzyme_productions:
+        range: EnzymeProductionRelation
+        multivalued: true
+        description: >-
+          A semicolon-separated list of conditions entries related to enzyme production by specific microbiomes formatted as: [Microbiome] | [Enzyme] | Conditions: effect:[Effect (e.g., increase, decrease, optimum)], [Conditions]. All information must be explicitly mentioned in the text, otherwise, the entry must be excluded from output.
+
+          **Constraints**:
+          - [Microbiome] including microbiome or bacterial species explicitly mentioned in the text.Should be exists in "microbiome" field from entities.
+          - [Enzyme] including enzyme name produced by the microbiomes explicitly mentioned in the text. Should be exists in "enzyme" field from entities.
+          - [Effect] must be one of the following valid values: increase, decrease, optimum.
+          - [Conditions] including at least one of the following fields and must not include fields not exist in follow fields: temperature (e.g. fermentation temperature), pH (e.g. pH level of the fermentation medium), substrate (e.g. type of substrate utilized), incubation period (e.g. fermentation duration), medium (e.g. type and composition of growth medium), moisture (e.g. moisture level and measurement method), carbon source (e.g. source of carbon), nitrogen source (e.g. nitrogen source used), aeration (e.g. oxygen level in percentage or dissolved oxygen), agitation (e.g. agitation conditions including speed and duration), volume (e.g. total volume of fermentation medium), production yield (e.g. quantitative value of production yield).
+          - Do not infer or assume any conditions, and do not include placeholders like `not specified` or fields that are not explicitly stated.
+          - Entries must grouped by paired [Microbiome], [Enzyme], and [Effect]. If any of [Microbiome], [Enzyme], and [Effect] is not specified or not exis, the entry must be excluded from output.
+          - Each entry must specify Microbiome, Enzyme, and Effect all together; otherwise, the entry must be excluded from output.
+          - Each entry must have a single, consistent Effect; different effects require separate entries.
+
+          **Example Output**:
+          Escherichia coli | lipase | Conditions: effect:increase, medium: LB medium, temperature:50°C, pH:8.0, substrate:glucose; Thermobifida fusca | endoglucanase | Conditions: effect:optimum, moisture: 70% RH, carbon source:glucose, substrate:sucrose
+
+          **Instructions**:
+          - Read the provided text carefully. Do not infer or assume any output, all information must be explicitly mentioned in the text, otherwise, the entry must be excluded from output.
+          - Identify and extract the relevant information for Microbiome, Enzyme, Effect, and the specified conditions only if explicitly mentioned in the text.
+          - Format the extracted information according to the specified structure.
+          - Ensure that all constraints are met.
+          - If no content are found, omit the "enzyme_productions" field from entities.
+          - Format the entries output as a single line.
+          - Ensure the list does not end with a delimiter or remove the last delimiter.
+
+
+
+      enzyme_activities:
+        range: EnzymeActivityRelation
+        multivalued: true
+        description: >-
+          A semicolon-separated list of conditions entries related to enzyme activities on specific substrates formatted as: [Enzyme] | [Substrate] | Conditions: effect:[Effect (e.g., enhance, inhibit, stable, maximum)], [Conditions]. All information must be explicitly mentioned in the text, otherwise, the entry must be excluded from output.
+
+          **Constraints**:
+          - [Enzyme] including enzyme name produced by the microbiomes explicitly mentioned in the text. Should be exists in "enzyme" field from entities.
+          - [Substrate] including substrates specifically catalyzed by the enzymes mentioned in the text. Should be exists in "substrate" field from entities
+          - [Effect] must be one of the following valid values: enhance, inhibit, stable, maximum.
+          - [Conditions] including at least one of the following fields and must not include fields not exist in follow fields: pH (e.g. pH level affecting enzyme activity), temperature (e.g. temperature affecting enzyme activity), ions (e.g. metal ions affecting enzyme activity), surfactants (e.g. surfactants affecting enzyme activity), chemicals (e.g. chemicals affecting enzyme activity), enzyme activity (e.g. quantitative value of enzyme activity), substrate concentration (e.g. concentration of substrate).
+          - Do not infer or assume any conditions, and do not include placeholders like `not specified` or fields that are not explicitly stated.
+          - Entries must grouped by paired [Enzyme], [Substrate], and [Effect]. If any of [Enzyme], [Substrate], and [Effect] is not specified or not exist, the entry must be excluded from output.
+          - Each entry must specify [Enzyme], [Substrate] and [Effect] all together; otherwise, the entry must be excluded from output.
+          - Each entry must have a single, consistent Effect; different effects require separate entries.
+
+
+          **Example Output**:
+          leucine dehydrogenase | D-asparagine | Conditions: effect:enhance, pH:7.0, ions:Mg²⁺; polygalacturonase | ammonium formate | Conditions: effect:inhibit, surfactants:SDS, substrate concentration:10 mM
+
+          **Instructions**:
+          - Read the provided text carefully, all information must be explicitly mentioned in the text, otherwise, the entry must be excluded from output.
+          - Identify and extract the relevant information for Enzyme, Substrate, Effect, and the specified conditions.
+          - Format the extracted information according to the specified structure.
+          - Ensure that all constraints are met.
+          - If no content are found, omit the "enzyme_activities" field from entities.
+          - Format the entries output as a single line.
+          - Ensure the list does not end with a delimiter or remove the last delimiter.
+
+  Microbiome:
+    is_a: NamedEntity
+    description: Represents various microbiomes, from the evidence of their taxonomic classifications and roles in enzyme fermentation.
+
+  Enzyme:
+    is_a: NamedEntity
+    description: Represents enzymes, from the evidence of their functions, classifications, and roles in biochemical reactions during fermentation.
+
+  Substrate:
+    is_a: NamedEntity
+    description: Represents its characteristics as a lignocellulosic biomass and its potential as a carbon source for microbial fermentation processes.
+
+  EnzymeProduction:
+    description: Specific conditions, effect on yield, and the yield of enzyme, which is produced by microbiome.
+    attributes:
+      temperature:
+        description: Indicate the temperature for fermentation, specifying the range if applicable. If not specified, use 'not specified'.
+        range: string
+      ph:
+        description: Indicate the pH level of the fermentation medium, specifying the range if applicable. If not specified, use 'not specified'.
+        range: string
+      substrate:
+        description: Indicate the type of substrate utilized in fermentation. If not specified, use 'not specified'.
+        range: string
+      incubation_period:
+        description: Indicate the duration of fermentation, specifying the unit of time (e.g., hours, days). If not specified, use 'not specified'.
+        range: string
+      medium:
+        description: Indicate the type of growth medium used during fermentation, including its composition if relevant. If not specified, use 'not specified'.
+        range: string
+      moisture:
+        description: Indicate the moisture level during fermentation, stating the measurement method if applicable. If not specified, use 'not specified'.
+        range: string
+      carbon_source:
+        description: Indicate the source of carbon in the medium, describing its form (e.g., glucose, sucrose). If not specified, use 'not specified'.
+        range: string
+      nitrogen_source:
+        description: Indicate the nitrogen source used in the fermentation process, including its type if applicable. If not specified, use 'not specified'.
+        range: string
+      aeration:
+        description: Indicate the oxygen level in percentage or dissolved oxygen (DO), (e.g., 60% DO, 60 DO). If not specified, use 'not specified'.
+        range: string
+      agitation:
+        description: Indicate the agitation conditions used, including speed and duration if applicable (e.g. 1000 rpm). If not specified, use 'not specified'.
+        range: string
+      volume:
+        description: Indicate the total volume of the fermentation medium, including the unit of measurement (e.g., liters). If not specified, use 'not specified'.
+        range: string
+      effect:
+        description: Classify the effect on production as 'increase', 'decrease', or 'optimum'. This fields must be specified.
+        range: string
+      quantitative_value:
+        description: Include a quantitative measure of production yield with its unit (e.g., grams per liter). If not specified, use 'not specified'.
+        range: string
+
+  EnzymeActivity:
+    description: Specific conditions, effect on activity, and the activity of enzyme.
+    attributes:
+      ph:
+        description: Indicate the pH level of the enzyme activity, specifying the range if applicable. If not specified, use 'not specified'.
+        range: string
+      temperature:
+        description: Indicate the temperature for enzyme activity, specifying the range if applicable. If not specified, use 'not specified'.
+        range: string
+      ions:
+        description: List any metal ions that influence enzyme activity. If not specified, use 'not specified'.
+        range: string
+      surfactants:
+        description: List any surfactants affecting enzyme activity. If not specified, use 'not specified'.
+        range: string
+      chemicals:
+        description: List chemicals that impact enzyme activity. If not specified, use 'not specified'.
+        range: string
+      effect:
+        description: Classify the effect on enzyme activity as 'enhance', 'inhibit', 'stable', 'maximum', or 'not significantly inhibited'. This fields must be specified.
+        range: string
+      quantitative_value:
+        description: Include a quantitative measure of enzyme activity with its unit (e.g., activity units per milliliter). If not specified, use 'not specified'.
+        range: string
+      substrate_concentration:
+        description: Indicate the concentration of the substrate, specifying the range if applicable. If not specified, use 'not specified'.
+        range: string
+
+  EnzymeProductionRelation:
+    is_a: Triple
+    description: A triple where the subject is a microbiome species, the object is an enzyme produced by that microbiome, and the predicate describes the production conditions.
+    slot_usage:
+      subject:
+        description: Specify the specific microbiome involved in the fermentation process.  Do not change, only extract.
+        range: Microbiome
+      predicate:
+        description: Specify the production conditions, including temperature, pH, substrate, incubation period, medium, moisture, carbon source, nitrogen source, aeration, agitation, volume, effect, production yield.  Do not change, only extract.  If empty, this whole triple entry shoul be excluded from output.
+        range: EnzymeProduction
+      object:
+        description: Specify the enzyme produced by the microbiome.  Do not change, only extract.
+        range: Enzyme
+      qualifier:
+        description: Keep it empty, do not include in output.
+      subject_qualifier:
+        description: Keep it empty, do not include in output.
+      object_qualifier:
+        description: Keep it empty, do not include in output.
+
+
+  EnzymeActivityRelation:
+    is_a: Triple
+    description: A triple where the subject is an enzyme, the object is the substrate that the enzyme catalyzes, and the predicate describes the catalytic conditions.
+    slot_usage:
+      subject:
+        description: Specify the enzyme involved in the catalysis. Do not change, only extract.
+        range: Enzyme
+      predicate:
+        description: Specify the catalytic conditions, including pH, temperature, ions, surfactants, chemicals, effect, enzyme activity.  Do not change, only extract. If empty, this whole triple entry shoul be excluded from output.
+        range: EnzymeActivity
+      object:
+        description: Specify the substrate being catalyzed by the enzyme.  Do not change, only extract.
+        range: Substrate
+
+      qualifier:
+        description: Keep it empty, do not include in output.
+      subject_qualifier:
+        description: Keep it empty, do not include in output.
+      object_qualifier:
+        description: Keep it empty, do not include in output.
