@@ -1,105 +1,98 @@
 # MEPAM
 a evidence-based Question-Answering system：Microbial Enzyme Production and Catalytic Activit
-## 效果图
+## Effect Diagram
 ![问答系统效果图](img/qa_show.png)
 ## Before using the QAsystem
 Please download the QAsystem:
 ```bash
 wget -O MEPAM_QA.tar "https://example.com/path/to/MEPAM_QA.tar"
 ```
-## 技术架构
-MEPAM_NER:基于ontogpt的实体识别
-MEPAM_QA：基于graphrag的问答系统
-## 快速开始
+## Technical Architecture
+MEPAM_NER:Named Entity Recognition based on OntoGPT
+MEPAM_QA：Question-Answering System based on GraphRAG
+## Quick Start
 ## MEPAM_NER
-您可以通过MEPAM_NER快速进行图谱的构建工作，如果仅需要使用问答系统可直接跳转MEPAM_QA部分
-### 1. 环境配置
+You can quickly build a knowledge graph using MEPAM_NER. If you only need to use the QA system, you can skip to the MEPAM_QA section.
+### 1. Environment Configuration
 ```bash
 conda env create -f environment.yaml
 conda activate ner
 poetry install
 ```
-在运行代码前请设置您的api key和ini文件中的基本设置
-通过设置.env文件保存您的api key也可以通过export设置
+Before running the code, please set your API key and basic settings in the INI file. You can also save your API key in the .env file or set it using export:
  ```bash
 export OPENAI_API_KEY=your_api_key_here 
  ```
-1.1 安装结果评估模型ollama/qwen2.5:14b
+1.1 Install the Evaluation Model ollama/qwen2.5:14b
 ```bash
 export OLLAMA_MIRROR="https://ghproxy.cn/https://github.com/ollama/ollama/releases/latest/download"
 curl -fsSL https://ollama.com/install.sh | sed "s|https://ollama.com/download|$OLLAMA_MIRROR|g" | sh
 ollama run qwen2.5:14b
 ```
-### 2. 三元组提取
-2.1 pdf提取信息
+### 2. Triple Extraction
+2.1 Extract Information from PDFs
 
 ```bash
 python MEPAM_NER/scripts/grobid_pdf2csv.py MEPAM_NER/scripts/pdf2txt.ini
 python MEPAM_NER/scripts/cermine_pdf2csv.py MEPAM_NER/scripts/pdf2txt.ini
 python MEPAM/MEPAM_NER/scripts/combine.py
  ```
-2.2 PDF提取的准确度评估
-请在使用前修改ini配置
+2.2 Evaluate the Accuracy of PDF Extraction
+Please modify the INI configuration before use:
 ```bash
 python MEPAM_NER/scripts/parse_metric.py MEPAM_NER/scripts/pdf2txt.ini
  ```
-#### 在提取前请您根据data/100txtlist.xlsx中的名单下载对应文献以便进行测试
+#### Before extraction, please download the corresponding literature according to the list in data/100txtlist.xlsx for testing.
 
-2.3 LinkML提取三元组
+2.3 Extract Triples Using LinkML
 ```bash
 bash MEPAM_NER/scripts/LinkML.sh
 ```
-2.4 NonLinkML提取三元组
+2.4 Extract Triples Using NonLinkML
 ```bash
 python MEPAM_NER/scripts/getjson.py --input_folder MEPAM_NER/data/100txt/ --output_folder data/nonlinkml/qwen/  --api_key your_api_key_here --model openai/qwen2.5-72b-instruct --base_url https://dashscope.aliyuncs.com/compatible-mode/v1 
 ```
-2.5 结果评估
+2.5 Evaluate the Results
 ```bash
 python MEPAM_NER/scripts/ner_metric.py ner_metric.ini
 ```
-####在data文件中我们保存了100篇文献的linkml、nonlinkml以及人工提取结果，以及最终评估的效果
-### 3. 问答系统的使用
-3.1 启动Ollama服务
+####In the data directory, we have saved the results of LinkML, NonLinkML, and manual extraction for 100 articles, as well as the final evaluation results.
+### 3. Using the QA System
+3.1 Start the Ollama Service
 ```bash
 cd MEPAM_QA/ollama
 sh start_service.sh
 ```
-验证ollama服务是否运行
-在浏览器地址栏中输入http://your_IP:11434 检查是否显示Ollama is running
-3.2 启动nebula graph
+Verify if the Ollama service is running:
+Enter http://your_IP:11434 in your browser's address bar to check if "Ollama is running" is displayed.
+3.2 Start Nebula Graph
 ```bash
+cd
 cd nebula/nebula-graph-3.8
-docker-compose pull
 docker-compose up -d
 ```
-3.3 启动nebula graph console
+3.3 Start Nebula Graph Console
 ```bash
 cd nebula-graph-studio-3.10.0
-docker-compose pull
 docker-compose up -d
 ```
-你可以通过http://your_IP:7001/进行登录，默认账号是root密码是12345678
-3.4 确认数据索引是否都存在
-节点索引，如果存在则跳过下一步的索引创建环节
-![问答系统效果图](img/index-1.png)
-如果不存在，请手动创建一下这三个顶点的索引
-![问答系统效果图](img/index-2.png)
-创建完成后执行rebuild
-![问答系统效果图](img/index-3.png)
-3.5 边索引是否存在，如果存在则跳过下一步的索引创建环节
-![问答系统效果图](img/index-4.png)
-如果不存在，请手动创建一下边的索引
-![问答系统效果图](img/index-5.png)
-创建完成后执行rebuild
-![问答系统效果图](img/index-6.png)
-3.5 chatbot服务
+You can log in via http://your_IP:7001/. The default username is root and the password is 12345678.
+3.4 Confirm if the Data Index Exists
+Vertex index: If it exists, skip the next step of index creation.
+If it does not exist, please manually create the vertex index.
+After creation, execute rebuild.
+3.5 Check if the Edge Index Exists
+If it exists, skip the next step of index creation.
+If it does not exist, please manually create the edge index.
+After creation, execute rebuild.
+3.5 Chatbot Service
 ```bash
 cd enzyme-rag-server
 ```
-修改app/config.yaml，将地址修改为部署nebula和ollama部署机器的IP
+Modify app/config.yaml to change the address to the IP of the machine where Nebula and Ollama are deployed.
 ```bash
 sh start_service.sh
 docker ps | grep enzyme_rag_server
 ```
-你可以通过http://your_IP:8000/进行登录，默认账号是admin密码是admin
-#### 当服务器资源较少时可能会出现未响应的问题，请通过docker logs enzyme_rag_server查看是否出现times out报错，请确保具有一定的服务器资源再进行调用
+You can log in via http://your_IP:8000/. The default username is admin and the password is admin.
+#### When server resources are limited, there may be unresponsive issues. Please check for times out errors using docker logs enzyme_rag_server and ensure sufficient server resources before proceeding.
