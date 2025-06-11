@@ -1,0 +1,100 @@
+{
+    "extracted_object": {
+        "microbiome": [
+            "Pichia pastoris GS115"
+        ],
+        "enzyme": [
+            "Trichoderma reesei Cel5A",
+            "Trichoderma reesei Cel6A",
+            "Vitreoscilla hemoglobin (VHb)"
+        ],
+        "substrate": [
+            "cellulosic biomass",
+            "carbon monoxide"
+        ],
+        "enzyme_productions": [
+            {
+                "subject": "Pichia pastoris GS115",
+                "predicate": {
+                    "temperature": "28 C",
+                    "ph": "5.0",
+                    "substrate": "not specified",
+                    "incubation_period": "144 h",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "methanol",
+                    "nitrogen_source": "not specified",
+                    "aeration": "20% DO",
+                    "agitation": "not specified",
+                    "volume": "5 L",
+                    "effect": "increase",
+                    "quantitative_value": "366.8 U mL-1"
+                },
+                "object": "Trichoderma reesei Cel5A"
+            },
+            {
+                "subject": "Pichia pastoris GS115",
+                "predicate": {
+                    "temperature": "26 C",
+                    "ph": "7.0",
+                    "substrate": "not specified",
+                    "incubation_period": "144 h",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "methanol",
+                    "nitrogen_source": "not specified",
+                    "aeration": "20% DO",
+                    "agitation": "not specified",
+                    "volume": "5 L",
+                    "effect": "increase",
+                    "quantitative_value": "1.3 U mL-1"
+                },
+                "object": "Trichoderma reesei Cel6A"
+            }
+        ],
+        "enzyme_activities": [
+            {
+                "subject": "Trichoderma reesei Cel5A",
+                "predicate": {
+                    "ph": "5.0",
+                    "temperature": "28 C",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified",
+                    "effect": "maximum",
+                    "quantitative_value": "369 U mL-1",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "cellulosic biomass"
+            },
+            {
+                "subject": "Trichoderma reesei Cel6A",
+                "predicate": {
+                    "ph": "7.0",
+                    "temperature": "26 C",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified",
+                    "effect": "maximum",
+                    "quantitative_value": "1.3 U mL-1",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "cellulosic biomass"
+            },
+            {
+                "subject": "Vitreoscilla hemoglobin (VHb)",
+                "predicate": {
+                    "ph": "not specified",
+                    "temperature": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "carbon monoxide",
+                    "effect": "enhance",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "oxygen"
+            }
+        ]
+    }
+}

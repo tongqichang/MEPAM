@@ -1,0 +1,351 @@
+---
+input_text: "Enhanced heterologous expression of Trichoderma reesei Cel5A/Cel6A in
+  Pichia pastoris with extracellular co-expression of Vitreoscilla hemoglobin\tBACKGROUND
+  The deficiency of family 5 endoglucanase (Cel5A) and family 6 cellobiohydrolase
+  (Cel6A) has become a key limiting factor on cellulase enzymatic hydrolysis in bioprocessing
+  of cellulosic biomass. To improve the production of Trichoderma reesei Cel5A / Cel6A,
+  a Vitreoscilla hemoglobin (VHb) gene was tried to co-express extracellularly for
+  the first time with Cel5A / Cel6A in Pichia pastoris GS115.  RESULTS Newly constructed
+  recombinant of co-expressing Cel5A / Cel6A extracellularly with VHb was consistent
+  with the single expression at some key variables of culture condition, i.e. inoculum
+  size, initial pH, culture temperature and methanol concentration. Comparing their
+  single expression, the CMCase activity of co-expressed Cel5A and Cel6A enzymes enhanced
+  by 40% and 30%, respectively. With high-cell-density fed-batch (HCDFB) fermentation,
+  the co-expressed Cel5A enzyme activity was 366.8?U mL-1 with 4.3?g L-1 protein content
+  and the Cel6A enzyme activity reached 1.3?U mL-1 with 2.23?g L-1 protein content.
+  The two co-expressed enzyme activities were enhanced by 35% and 20%, respectively,
+  compared with the single expression.  CONCLUSION VHb protein capable of binding
+  oxygen can be successfully co-expressed extracellularly with other target proteins.
+  The co-expression of VHb with recombinant Cel5A / Cel6A is efficient at improving
+  oxygen-limited condition and thus enzyme production in both shake-flask and HCDFB
+  fermentation. ? 2017 Society of Chemical Industry\tOxygen supply is one paramount
+  parameter for cell growth and heterologous protein expression in recombinant P.
+  pastoris. The high O2 trapping and releasing ability makes VHb a suitable protein
+  to be co-expressed in P. pastoris to meet the intensively high O2 demand in the
+  methanol induction phase of HCDFB fermentation.19, 20 Therefore, to enhance P. pastoris
+  cell performance including growth, viability, and heterologous protein production,
+  we attempted to construct a recombinant P. pastoris strain capable of extracellular
+  co-expression of VHb and Cel5A / Cel6A under the control of the AOX1 promoter in
+  the next experiment.  Construction of co-expression recombinants The VHb gene was
+  cloned in the vector pPICZ|áA to obtain Zeocin resistance. The constructed expression
+  vector containing VHb gene was examined with agarose gel electrophoresis after single/double
+  restriction enzyme digestion (Fig. S1, Supporting data).  The above linearized chimeric
+  DNA genes pPICZ|áA-vgb was transformed into the two recombinants P. pastoris GS115-Cel5A
+  and P. pastoris GS115-Cel6A, respectively. With preliminary screening on the YPDS
+  plate (500?|ìg mL-1 Zeocin) (Fig. S2) and repeat screening in shake flask (Fig.
+  1), Colony-69 and Colony-15 promised growth and CMCase activity, and were thus selected
+  as the co-expression strain, named as P. pastoris GS115-Cel5A?+?vgb and P. pastoris
+  GS115-Cel6A?+?vgb, respectively.Verification of the co-expression recombinants Colony
+  PCR analysis was performed (Fig. 2). It is shown that the fragments of Cel5A / Cel6A
+  and vgb were separated via agarose gel electrophoresis. The pPICZ|áA plasmid carrying
+  vgb was introduced individually in the recombinants P. pastoris GS115-Cel5A and
+  P. pastoris GS115-Cel6A, and finally formed into the co-expressed recombinants.Furthermore,
+  CO-difference spectra were measured to verify the functional expression of VHb in
+  two recombinants. The two expression recombinants P. pastoris GS115-Cel5A / -Cel6A
+  and two co-expression recombinants P. pastoris GS115-Cel5A?+?vgb / Cel6A?+?vgb were
+  all incubated at 30???C for 144?h to compare the absorption spectra of their broth
+  supernatant. As shown in Fig. 3, there was no absorption peak for the broth supernatant
+  of the recombinants P. pastoris GS115-Cel5A / -Cel6A. Remarkably, an intense absorption
+  peak at 419?nm appeared for the broth supernatant of P. pastoris GS115-Cel5A?+?vgb.
+  In addition, a strong absorption peak at 408?nm and a deep trough near 436?nm were
+  observed for P. pastoris GS115-Cel6A?+?vgb. The spectra meant that the vgb gene
+  product expressed from the AOX1 promoter in the two co-expression recombinants had
+  significant biochemical activity, binding the carbon monoxide. This observation
+  is in accordance with the earlier study by Wu and Fu.22 Briefly, these results indicated
+  that VHb was successfully co-expressed extracellularly with recombinant Cel5A /
+  Cel6A enzyme. Furthermore, the co-expressed VHb presented superior performance for
+  binding oxygen as expected.Preliminary fermentation optimization for two co-expression
+  recombinants Finding the optimal cultivation condition is indispensable for recombinant
+  protein expression.26-28 To obtain a high expression level of the recombinant Cel5A
+  and Cel6A, several key variables of the strain cultivation, i.e. inoculum size,
+  initial pH, culture temperature and methanol concentration, were considered.  Figure
+  4 demonstrates the effect of these key variables on cell biomass and Cel5A enzyme
+  production of P. pastoris GS115-Cel5A?+?vgb. The results showed that 2% of the inoculum
+  size contributed to both the maximum cell biomass (OD600?=?27.1) and Cel5A enzyme
+  activity (26.9?U mL-1 at 144?h) (Fig. 4(A)). At an initial pH?5.0, both the cell
+  biomass and enzyme production reached a maximum level after 144?h of fermentation
+  (Fig. 4(B)). At 28???C, the recombinant maximized cell biomass at OD600?=?25.6 and
+  enzyme activity at 25.8?U mL-1 (Fig. 4(C)). 1.5% (v/v) of the methanol addition
+  showed higher CMCase activity and OD value, and was chosen for future experiments
+  (Fig. 4(D)). Thus, the incubation of P. pastoris GS115-Cel5A?+?vgb was optimized
+  as follows: inoculum size 2%, initial pH?5.0, culture temperature 28???C and methanol
+  addition 1.5% (v/v). Similarly, the growth condition of P. pastoris GS115-Cel6A?+?vgb
+  was selected as below: inoculum size 3%, initial pH?7.0, culture temperature 26???C
+  and methanol concentration 1.5% (v/v) (Fig. 5). This indicated that the optimal
+  conditions (i.e. the initial pH) for the two recombinants were different from each
+  other to promote high enzyme production. Presumably, the target gene variety of
+  Cel5A/Cel6A enzyme was responsible for the difference. However, the optimal incubation
+  condition was consistent with that of the corresponding single expression reported
+  previously.15, 16 It suggested that VHb gene insertion in the recombinant did not
+  change the culture condition of recombinants.Under these selected conditions, P.
+  pastoris GS115-Cel5A?+?vgb produced 28.0?U mL-1 of Cel5A enzyme with biomass OD600
+  of 27, and P. pastoris GS115-Cel6A?+?vgb yielded 0.17?U mL-1 of Cel6A enzyme with
+  biomass OD600 of 23. This indicated that VHb enhanced the Cel5A / Cel6A enzyme expression
+  and resulted in 1.4¨C1.3-fold enzyme activity compared with that of their respective
+  predecessor (20?U mL-1/0.13?U mL-1). In short, VHb introduction can effectively
+  improve the expression with no influence on the incubation condition of the recombinants.23\
+  \  HCDFB fermentation of two co-expression recombinants Numerous references in the
+  literature have demonstrated that the preferred culture for high cell density growth
+  should contribute to protein yields.10 Based on the above shake-flask fermentation,
+  the HCDFB fermentation of two co-expression recombinants was implemented in a 5?L
+  fermenter to assess the role of VHb by characterization of their growth and enzyme
+  production (Fig. 6). Dissolved oxygen (DO) is a key parameter for high cell density
+  fermentation and should be kept above a minimum level.29 In this study, DO was controlled
+  at approximately 20%, and the addition of carbon source was coupled with the DO
+  to facilitate good growth of recombinants (Fig. 6(a) and (b)). During the period
+  of fermentation, the cell biomass of the two recombinants increased rapidly. Both
+  P. pastoris GS115-Cel5A?+?vgb and P. pastoris GS115-Cel6A?+?vgb yielded an almost
+  maximum cell biomass of OD600?=?785 and OD600?=?683, respectively, at 180?h of fermentation.
+  The results showed that the growth of the two strains was exceedingly robust and
+  suitable for HCDFB fermentation.Figure 6(c) and (d) describe the expression profile
+  of Cel5A and Cel6A enzymes from the two recombinants. With the HCDFB fermentation
+  approach, the two recombinants produced more enzymes. SDS-PAGE of fermentation supernatant
+  indicated that the Cel5A and Cel6A protein content increased with fermentation time.
+  For P. pastoris GS115-Cel5A?+?vgb, the protein concentration and enzyme activity
+  were maximized at 4.3?g L-1 and 369?U mL-1 at 180?h, respectively. Recombinant P.
+  pastoris GS115-Cel6A?+?vgb produced a high protein concentration and enzyme activity
+  with fermentation time ongoing. At 204?h, the protein concentration and enzyme activity
+  was 2.2?g L-1 and 1.3?U mL-1, respectively. These results indicated that the two
+  recombinants are capable of high heterologous enzyme expression during HCDFB fermentation.\
+  \  Previous work on heterologous Cel5A / Cel6A enzyme expression in P. pastoris
+  has been reported. As seen in Table 1, the highest CMCase activity of Cel5A enzyme
+  was 2358.8?U mL-1 with 2.6?g L-1 of protein content by optimization of Cel5A gene.12
+  And the highest Cel6A enzyme activity reached 9.1?U mL-1 with 5.9?g L-1 of protein
+  content in P. pastoris.11 Our work is the first to co-express the cellulase Cel5A
+  / Cel6A extracellularly with VHb in P. pastoris to improve their respective heterologous
+  secretion. Based on these studies, the Cel5A / Cel6A enzyme expression obtained
+  in this study is of a high level.Compared with the shake-flask fermentation, the
+  co-expressed Cel5A enzyme activity in HCDFB fermentation increased by 13 times,
+  and the cell biomass (OD600) 29-fold. Likewise, the Cel6A enzyme activity in HCDFB
+  fermentation was eight times that of the former (0.17?U mL-1) with a 30-fold increase
+  of cell biomass. Accordingly, HCDFB fermentation is an effective way to yield high
+  heterologous enzyme. Further, the specific CMCase activity of co-expressed Cel5A
+  and Cel6A enzymes in HCDFB fermentation was 467?U (L OD600)-1 and 1.9?U (L OD600)-1,
+  respectively, against 1037?U (L OD600)-1 and 7.4?U (L OD600)-1 of the enzymes in
+  the corresponding shake-flask fermentation (Table 1). The data support our recent
+  argument that the growth associated product formation kinetics cannot guarantee
+  consistency in the values of YP/X, even though the same expression system is used.30
+  More efforts are needed to improve the specific enzyme activity of cell biomass
+  in future work.  Compared with the single expression recombinants, the cell biomass
+  of co-expressing Cel5A and Cel6A recombinants increased by 14% and 15%, respectively,
+  in HCDFB fermentation (Table 1). Though almost equivalent in protein production,
+  the Cel5A enzyme activity from the co-expression recombinant was 369.0?U mL-1 of
+  CMCase activity, which was 37% higher than that (270.9?U mL-1) of the single expression
+  recombinant. Likewise, co-expressing Cel6A recombinant produced 20% more enzyme
+  activity than that (1.08?U mL-1) of the single expression recombinant. The comparison
+  suggests that the introduction of VHb gene enhanced both cell biomass and enzyme
+  production in HCDFB fermentation. Thus, VHb gene is indeed efficient in improving
+  the oxygen-limited condition of these strains.  In shake-flask fermentation, the
+  VHb co-expression had either no positive (Cel5A) and even adverse (Cel6A) effects
+  on cell biomass compared with the single expression (Table 1), which has been observed
+  in other research.31 Conversely, several researchers stated that the VHb+ strain
+  displayed excellent cell growth with a high cell density.21-23 In this case, there
+  is a dispute over the role of co-expressed VHb on the cell biomass with shake-flask
+  fermentation, although it is unanimous that there was a positive influence on enzyme
+  production. Further, the VHb co-expression allowed production of 1037?U (L OD600)-1
+  of the specific Cel5A enzyme activity and 7.4?U (L OD600)-1 the specific Cel6A enzyme
+  activity in shake-flask fermentation, which was enhanced by 45% and 85% compared
+  with their corresponding single expression systems. Similarly, Wu et al.31 reported
+  that the specific |?-galactosidase activity of the VHb+ strain increased approximately
+  3-fold higher than that of the VHb? strain. However, Wu and Fu22 found that the
+  enhancement of |?-galactosidase activity was exclusively due to the increase in
+  cell biomass of the VHb?+?strain, arguing that no obvious increase of the specific
+  |?-galactosidase activity was contributed by VHb co-expression. These arguments
+  also seem contradictory. Interestingly, our result for VHb co-expression with Cel5A
+  and Cel6A in HCDFB fermentation separately supported their bilateral argument, as
+  the specific Cel5A enzyme activity (467?U (L OD600)-1) was enhanced by 19% and the
+  specific Cel6A enzyme activity (1.9?U (L OD600)-1) remained almost equivalent compared
+  with their respective single expression. Wang et al.21 speculated that the function
+  of VHb might vary in different microorganisms. Undisputedly, DO control of the fermentation
+  process can contribute to the dispute as VHb is supposed to present the active role
+  under the aeration-limiting condition. In addition, the VHb is likely to change
+  the metabolism pathway of microbial cells depending partly on medium composition.34
+  The reason underlying the apparently contradictory argument has yet to be elucidated."
+raw_completion_output: |-
+  microbiome: Pichia pastoris  
+  enzyme: Cel5A; Cel6A  
+  substrate: cellulosic biomass  
+  enzyme_productions: Pichia pastoris | Cel5A | Conditions: effect:increase, temperature:28°C, pH:5.0, methanol concentration:1.5%; Pichia pastoris | Cel6A | Conditions: effect:increase, temperature:26°C, pH:7.0, methanol concentration:1.5%  
+  enzyme_activities: Cel5A | cellulosic biomass | Conditions: effect:enhance, temperature:28°C, pH:5.0; Cel6A | cellulosic biomass | Conditions: effect:enhance, temperature:26°C, pH:7.0
+prompt: |+
+  Split the following piece of text into fields in the following format:
+
+  ph: <Indicate the pH level of the emzyme activity, specifying the range if applicable. If not specified, use 'not specified'.>
+  temperature: <Indicate the temperature for emzyme activity, specifying the range if applicable. If not specified, use 'not specified'.>
+  ions: <List any metal ions that influence enzyme activity. If not specified, use 'not specified'.>
+  surfactants: <List any surfactants affecting enzyme activity. If not specified, use 'not specified'.>
+  chemicals: <List chemicals that impact enzyme activity. If not specified, use 'not specified'.>
+  effect: <Classify the effect on enzyme activity as 'enhance', 'inhibit', 'stable', 'maximum', or 'not significantly inhibited'. This fields must be specified.>
+  quantitative_value: <Include a quantitative measure of enzyme activity with its unit (e.g., activity units per milliliter). If not specified, use 'not specified'.>
+  substrate_concentration: <Indicate the concentration of the substrate, specifying the range if applicable. If not specified, use 'not specified'.>
+
+
+  Text:
+  effect:enhance, temperature:26°C, pH:7.0
+
+  ===
+
+extracted_object:
+  microbiome:
+    - AUTO:Pichia%20pastoris
+  enzyme:
+    - AUTO:Cel5A
+    - AUTO:Cel6A
+  substrate:
+    - AUTO:cellulosic%20biomass
+  enzyme_productions:
+    - subject: AUTO:Pichia%20pastoris
+      predicate:
+        temperature: 28°C
+        ph: '5.0'
+        substrate: not specified
+        incubation_period: not specified
+        medium: not specified
+        moisture: not specified
+        carbon_source: not specified
+        nitrogen_source: not specified
+        aeration: not specified
+        agitation: not specified
+        volume: not specified
+        effect: increase
+        quantitative_value: not specified
+      object: AUTO:Cel5A
+    - subject: AUTO:Pichia%20pastoris
+      predicate:
+        temperature: 26°C
+        ph: '7.0'
+        substrate: not specified
+        incubation_period: not specified
+        medium: not specified
+        moisture: not specified
+        carbon_source: not specified
+        nitrogen_source: not specified
+        aeration: not specified
+        agitation: not specified
+        volume: not specified
+        effect: increase
+        quantitative_value: not specified
+      object: AUTO:Cel6A
+  enzyme_activities:
+    - subject: AUTO:Cel5A
+      predicate:
+        ph: '5.0'
+        temperature: 28°C
+        ions: not specified
+        surfactants: not specified
+        chemicals: not specified
+        effect: enhance
+        quantitative_value: not specified
+        substrate_concentration: not specified
+      object: AUTO:cellulosic%20biomass
+    - subject: AUTO:Cel6A
+      predicate:
+        ph: '7.0'
+        temperature: 26°C
+        ions: not specified
+        surfactants: not specified
+        chemicals: not specified
+        effect: enhance
+        quantitative_value: not specified
+        substrate_concentration: not specified
+      object: AUTO:cellulosic%20biomass
+named_entities:
+  - id: AUTO:Pichia%20pastoris
+    label: Pichia pastoris
+    original_spans:
+      - 70:84
+      - 533:547
+  - id: AUTO:Cel5A
+    label: Cel5A
+    original_spans:
+      - 55:59
+      - 199:203
+      - 400:404
+      - 516:520
+      - 612:616
+      - 888:892
+      - 1023:1027
+      - 1464:1468
+      - 2189:2193
+      - 2677:2681
+      - 2989:2993
+      - 3174:3178
+      - 3344:3348
+      - 3596:3600
+      - 3664:3668
+      - 3904:3908
+      - 4025:4029
+      - 4525:4529
+      - 4869:4873
+      - 5109:5113
+      - 5154:5158
+      - 5279:5283
+      - 5755:5759
+      - 6280:6284
+      - 6628:6632
+      - 6664:6668
+      - 6836:6840
+      - 7975:7979
+      - 8300:8304
+      - 8489:8493
+      - 8577:8581
+      - 9094:9098
+      - 9211:9215
+      - 9295:9299
+      - 9468:9472
+      - 9602:9606
+      - 9737:9741
+      - 10131:10135
+      - 10731:10735
+      - 10885:10889
+      - 11502:11506
+      - 12062:12066
+      - 12785:12789
+      - 12886:12890
+  - id: AUTO:Cel6A
+    label: Cel6A
+    original_spans:
+      - 61:65
+      - 238:242
+      - 408:412
+      - 524:528
+      - 620:624
+      - 898:902
+      - 1101:1105
+      - 1472:1476
+      - 2197:2201
+      - 2705:2709
+      - 3023:3027
+      - 3182:3186
+      - 3372:3376
+      - 3605:3609
+      - 3678:3682
+      - 3913:3917
+      - 4152:4156
+      - 4533:4537
+      - 4879:4883
+      - 5941:5945
+      - 6286:6290
+      - 6725:6729
+      - 6760:6764
+      - 6844:6848
+      - 8009:8013
+      - 8310:8314
+      - 8499:8503
+      - 8733:8737
+      - 9102:9106
+      - 9325:9329
+      - 9476:9480
+      - 9610:9614
+      - 9856:9860
+      - 10141:10145
+      - 10741:10745
+      - 11087:11091
+      - 11527:11531
+      - 12119:12123
+      - 12795:12799
+      - 12965:12969
+  - id: AUTO:cellulosic%20biomass
+    label: cellulosic biomass
+    original_spans:
+      - 332:349

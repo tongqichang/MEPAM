@@ -1,0 +1,122 @@
+{
+    "extracted_object": {
+        "microbiome": [
+            "Escherichia coli",
+            "Rhodococcus ruber DSM 44541"
+        ],
+        "enzyme": [
+            "Alcohol dehydrogenase ADH-'A'"
+        ],
+        "substrate": [
+            "acetophenone",
+            "rac-1-phenylethanol"
+        ],
+        "enzyme_productions": [
+            {
+                "subject": "Escherichia coli",
+                "predicate": {
+                    "temperature": "20°C",
+                    "ph": "not specified",
+                    "substrate": "not specified",
+                    "incubation_period": "48 hours",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "not specified",
+                    "nitrogen_source": "not specified",
+                    "aeration": "not specified",
+                    "agitation": "not specified",
+                    "volume": "not specified",
+                    "effect": "increase",
+                    "quantitative_value": "2.0 U/mg cells"
+                },
+                "object": "Alcohol dehydrogenase ADH-'A'"
+            }
+        ],
+        "enzyme_activities": [
+            {
+                "subject": "Alcohol dehydrogenase ADH-'A'",
+                "predicate": {
+                    "ph": "7.5",
+                    "temperature": "not specified",
+                    "effect": "maximum",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified"
+                },
+                "object": "acetophenone"
+            },
+            {
+                "subject": "Alcohol dehydrogenase ADH-'A'",
+                "predicate": {
+                    "ph": "7.5",
+                    "temperature": "not specified",
+                    "effect": "maximum",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified"
+                },
+                "object": "rac-1-phenylethanol"
+            },
+            {
+                "subject": "Alcohol dehydrogenase ADH-'A'",
+                "predicate": {
+                    "ph": "not specified",
+                    "temperature": "-12°C",
+                    "effect": "stable",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified"
+                },
+                "object": "acetophenone"
+            },
+            {
+                "subject": "Alcohol dehydrogenase ADH-'A'",
+                "predicate": {
+                    "ph": "not specified",
+                    "temperature": "-12°C",
+                    "effect": "stable",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified"
+                },
+                "object": "rac-1-phenylethanol"
+            },
+            {
+                "subject": "Alcohol dehydrogenase ADH-'A'",
+                "predicate": {
+                    "ph": "not specified",
+                    "temperature": "40°C",
+                    "effect": "collapse",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified"
+                },
+                "object": "not specified"
+            },
+            {
+                "subject": "Alcohol dehydrogenase ADH-'A'",
+                "predicate": {
+                    "ph": "not specified",
+                    "temperature": "not specified",
+                    "effect": "increase",
+                    "quantitative_value": "5-fold",
+                    "substrate_concentration": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "NADH"
+                },
+                "object": "acetophenone"
+            }
+        ]
+    }
+}

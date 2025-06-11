@@ -1,0 +1,131 @@
+{
+    "extracted_object": {
+        "microbiome": [
+            "Pichia pastoris"
+        ],
+        "enzyme": [
+            "Cel5A",
+            "Cel6A",
+            "Vitreoscilla hemoglobin (VHb)"
+        ],
+        "substrate": [],
+        "enzyme_productions": [
+            {
+                "subject": "Pichia pastoris",
+                "predicate": {
+                    "temperature": "28°C",
+                    "ph": "5.0",
+                    "substrate": "not specified",
+                    "incubation_period": "144 h",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "not specified",
+                    "nitrogen_source": "not specified",
+                    "aeration": "not specified",
+                    "agitation": "not specified",
+                    "volume": "not specified",
+                    "effect": "increase",
+                    "quantitative_value": "28.0 U mL-1"
+                },
+                "object": "Cel5A"
+            },
+            {
+                "subject": "Pichia pastoris",
+                "predicate": {
+                    "temperature": "26°C",
+                    "ph": "7.0",
+                    "substrate": "not specified",
+                    "incubation_period": "not specified",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "not specified",
+                    "nitrogen_source": "not specified",
+                    "aeration": "not specified",
+                    "agitation": "not specified",
+                    "volume": "not specified",
+                    "effect": "increase",
+                    "quantitative_value": "0.17 U mL-1"
+                },
+                "object": "Cel6A"
+            },
+            {
+                "subject": "Pichia pastoris",
+                "predicate": {
+                    "temperature": "28°C",
+                    "ph": "5.0",
+                    "substrate": "not specified",
+                    "incubation_period": "180 h",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "not specified",
+                    "nitrogen_source": "not specified",
+                    "aeration": "not specified",
+                    "agitation": "not specified",
+                    "volume": "5 L",
+                    "effect": "increase",
+                    "quantitative_value": "369 U mL-1"
+                },
+                "object": "Cel5A"
+            },
+            {
+                "subject": "Pichia pastoris",
+                "predicate": {
+                    "temperature": "28°C",
+                    "ph": "5.0",
+                    "substrate": "not specified",
+                    "incubation_period": "204 h",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "not specified",
+                    "nitrogen_source": "not specified",
+                    "aeration": "not specified",
+                    "agitation": "not specified",
+                    "volume": "5 L",
+                    "effect": "increase",
+                    "quantitative_value": "1.3 U mL-1"
+                },
+                "object": "Cel6A"
+            }
+        ],
+        "enzyme_activities": [
+            {
+                "subject": "Cel5A",
+                "predicate": {
+                    "ph": "5.0",
+                    "temperature": "28°C",
+                    "effect": "maximum",
+                    "quantitative_value": "28.0 U mL-1"
+                },
+                "object": "not specified"
+            },
+            {
+                "subject": "Cel6A",
+                "predicate": {
+                    "ph": "7.0",
+                    "temperature": "26°C",
+                    "effect": "maximum",
+                    "quantitative_value": "0.17 U mL-1"
+                },
+                "object": "not specified"
+            },
+            {
+                "subject": "Cel5A",
+                "predicate": {
+                    "temperature": "28°C",
+                    "effect": "maximum",
+                    "quantitative_value": "369 U mL-1"
+                },
+                "object": "not specified"
+            },
+            {
+                "subject": "Cel6A",
+                "predicate": {
+                    "temperature": "28°C",
+                    "effect": "maximum",
+                    "quantitative_value": "1.3 U mL-1"
+                },
+                "object": "not specified"
+            }
+        ]
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "extracted_object": {
+        "microbiome": [
+            "Escherichia coli",
+            "Rhodococcus ruber"
+        ],
+        "enzyme": [
+            "ADH-'A'"
+        ],
+        "substrate": [
+            "2-propanol",
+            "acetone",
+            "acetophenone",
+            "sec-alcohols",
+            "rac-1-phenylethanol"
+        ],
+        "enzyme_productions": [
+            {
+                "subject": "Escherichia coli",
+                "predicate": {
+                    "temperature": "20-30°C",
+                    "ph": "not specified",
+                    "substrate": "not specified",
+                    "incubation_period": "22-48 hours",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "not specified",
+                    "nitrogen_source": "not specified",
+                    "aeration": "not specified",
+                    "agitation": "not specified",
+                    "volume": "not specified",
+                    "effect": "increase",
+                    "quantitative_value": "2.0 U/mg cells"
+                },
+                "object": "ADH-'A'"
+            }
+        ],
+        "enzyme_activities": [
+            {
+                "subject": "ADH-'A'",
+                "predicate": {
+                    "ph": "7.5",
+                    "temperature": "not specified",
+                    "ions": "zinc",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified",
+                    "effect": "maximum",
+                    "quantitative_value": "2.0 U/mg cells",
+                    "substrate_concentration": "1 M"
+                },
+                "object": "acetophenone"
+            },
+            {
+                "subject": "ADH-'A'",
+                "predicate": {
+                    "ph": "7.5",
+                    "temperature": "not specified",
+                    "ions": "zinc",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified",
+                    "effect": "maximum",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "rac-1-phenylethanol"
+            }
+        ]
+    }
+}

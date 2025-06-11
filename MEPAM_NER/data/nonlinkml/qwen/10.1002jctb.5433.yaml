@@ -1,0 +1,85 @@
+{
+    "extracted_object": {
+        "microbiome": [
+            "Pichia pastoris"
+        ],
+        "enzyme": [
+            "Cel5A",
+            "Cel6A",
+            "Vitreoscilla hemoglobin (VHb)"
+        ],
+        "substrate": [
+            "cellulose"
+        ],
+        "enzyme_productions": [
+            {
+                "subject": "Pichia pastoris",
+                "predicate": {
+                    "temperature": "28 C",
+                    "ph": "5.0",
+                    "substrate": "methanol",
+                    "incubation_period": "144 h",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "methanol",
+                    "nitrogen_source": "not specified",
+                    "aeration": "20% DO",
+                    "agitation": "not specified",
+                    "volume": "5 L",
+                    "effect": "increase",
+                    "quantitative_value": "28.0 U mL-1"
+                },
+                "object": "Cel5A"
+            },
+            {
+                "subject": "Pichia pastoris",
+                "predicate": {
+                    "temperature": "26 C",
+                    "ph": "7.0",
+                    "substrate": "methanol",
+                    "incubation_period": "144 h",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "methanol",
+                    "nitrogen_source": "not specified",
+                    "aeration": "20% DO",
+                    "agitation": "not specified",
+                    "volume": "5 L",
+                    "effect": "increase",
+                    "quantitative_value": "0.17 U mL-1"
+                },
+                "object": "Cel6A"
+            }
+        ],
+        "enzyme_activities": [
+            {
+                "subject": "Cel5A",
+                "predicate": {
+                    "ph": "not specified",
+                    "temperature": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified",
+                    "effect": "enhance",
+                    "quantitative_value": "366.8 U mL-1",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "cellulose"
+            },
+            {
+                "subject": "Cel6A",
+                "predicate": {
+                    "ph": "not specified",
+                    "temperature": "not specified",
+                    "ions": "not specified",
+                    "surfactants": "not specified",
+                    "chemicals": "not specified",
+                    "effect": "enhance",
+                    "quantitative_value": "1.3 U mL-1",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "cellulose"
+            }
+        ]
+    }
+}

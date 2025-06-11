@@ -1,0 +1,96 @@
+{
+    "extracted_object": {
+        "microbiome": [
+            "Escherichia coli",
+            "Rhodococcus ruber DSM 44541"
+        ],
+        "enzyme": [
+            "ADH-'A'"
+        ],
+        "substrate": [
+            "acetophenone",
+            "2-propanol",
+            "acetone",
+            "rac-1-phenylethanol"
+        ],
+        "enzyme_productions": [
+            {
+                "subject": "Escherichia coli",
+                "predicate": {
+                    "temperature": "20 C",
+                    "ph": "not specified",
+                    "substrate": "not specified",
+                    "incubation_period": "48 hours",
+                    "medium": "not specified",
+                    "moisture": "not specified",
+                    "carbon_source": "not specified",
+                    "nitrogen_source": "not specified",
+                    "aeration": "not specified",
+                    "agitation": "not specified",
+                    "volume": "not specified",
+                    "effect": "increase",
+                    "quantitative_value": "2.0 U/mg cells"
+                },
+                "object": "ADH-'A'"
+            }
+        ],
+        "enzyme_activities": [
+            {
+                "subject": "ADH-'A'",
+                "predicate": {
+                    "ph": "7.5",
+                    "temperature": "40 C",
+                    "ions": "Zn^2+",
+                    "surfactants": "not specified",
+                    "chemicals": "NADH",
+                    "effect": "maximum",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "acetophenone"
+            },
+            {
+                "subject": "ADH-'A'",
+                "predicate": {
+                    "ph": "7.5",
+                    "temperature": "40 C",
+                    "ions": "Zn^2+",
+                    "surfactants": "not specified",
+                    "chemicals": "NADH",
+                    "effect": "maximum",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "2-propanol"
+            },
+            {
+                "subject": "ADH-'A'",
+                "predicate": {
+                    "ph": "7.5",
+                    "temperature": "40 C",
+                    "ions": "Zn^2+",
+                    "surfactants": "not specified",
+                    "chemicals": "NADH",
+                    "effect": "maximum",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "rac-1-phenylethanol"
+            },
+            {
+                "subject": "ADH-'A'",
+                "predicate": {
+                    "ph": "7.5",
+                    "temperature": "40 C",
+                    "ions": "Zn^2+",
+                    "surfactants": "not specified",
+                    "chemicals": "NADH",
+                    "effect": "maximum",
+                    "quantitative_value": "not specified",
+                    "substrate_concentration": "not specified"
+                },
+                "object": "acetone"
+            }
+        ]
+    }
+}

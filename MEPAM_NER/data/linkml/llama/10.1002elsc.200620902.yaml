@@ -1,0 +1,257 @@
+---
+input_text: "Optimization of reaction parameters and cultivation conditions for biocatalytic
+  hydrogen transfer employing overexpressed ADH-'A' from Rhodococcus ruber DSM 44541
+  in Escherichia coli\tThe alcohol dehydrogenase ADH-??A?ˉ from Rhodococcus ruber
+  DSM 44541 represents a highly efficient catalyst for biocatalytic hydrogen transfer
+  reactions. Starting from an exceedingly low level of active ADH-??A?ˉ in Escherichia
+  coli, the apparent specific activity of ADH-??A?ˉ overexpressed in E. coli cells
+  could be drastically enhanced by a factor of 550 by optimizing the host and induction/growth
+  conditions. The influence of reaction parameters like pH, cosubstrate (2-propanol,
+  acetone) concentration, substrate concentration temperature and additional cofactor
+  on the apparent activity was investigated. In contrast to the purified enzyme, the
+  pH optimum for oxidation and reduction were identical. Due to the employment of
+  whole cells of E. coli/ADH-??A?ˉ as catalyst lower operational stability was found.\t
+  3.1 Cultivation Starting from two E. coli clones,namely, E.coliBL21(DE3)/pET22b+-ADH-'A?ˉ('E.
+  coliBL21?ˉ)and E. coliD.H5a/pUC18-ADH-'A?ˉ('E. coli DHSa')15], the cultivation of
+  these strains wasoptimized in shake flasks to achieve amaximum of activity per dry
+  cell weight.As an assay the reduction of acetophe-none in the presence of 2-propanol
+  ashydrogen donor was performed. Further-more, for all assays lyophilized cells wereemployed.
+  Starting from the standard cultivation procedureaccording to the literature, such
+  as incubation for threehours before induction by IPTG (0.4 or 1 mM) and conti-nuation
+  of cultivation for one to 24 hours at 30??C, revealedthat ADH-'A?ˉ was expressed
+  in an active form as a first posi-tive result. However, the activity of lyophilized
+  cells of E. co-li BL21 thus obtained was low (see Tab. 1); the results for E.coliDHSa
+  were similar (data not shown). Overall, apparentactivities of E. coliBL2l were rather
+  disappointing as thebest E. coli preparation still displayed only one fourth of
+  theactivity of wild-type cells (~ 0.0057 U/mg CDW).Due to the low ODs4g obtained
+  after 24 hours of inductiontime during the first cultivation (see Tab. 1), the incubationtime
+  prior to induction was extended during the next optimi-zation round. Subsequently,
+  the IPTG concentration wasvaried between 1 and 2 mM, With these sequential varia-tions
+  the specific activity compared to the wild type doubled(see Tab. 2).Although the
+  incubation time after inductionshowed no significant influence, the highest activity
+  was ob-tained after an incubation periodof 22 hours in the presence of2 mM IPTG.
+  By using SDS-pageit was found that a significantamount of inclusion bodies wereformed.
+  Therefore, in the next step, thecultivation temperature after induction was varied
+  between 25and 30??C.Furthermore, sinceADH-'A?ˉis a zinc-dependent en-Zyme, additional
+  zinc was supplied to the culture medium(100 mg/L ZnClz).Althoughhigher ODs were
+  obtained whencultivated at 30??C, higher specif.ic activity was obtained at 25??C(see
+  Tab. 3). At this stage, the EcoliBL21(DE3)clone alreadyshowed double activity comparedto
+  E.coliDHa (data notshown).Nevertheless, inclusionbodies were still present, although
+  their relative amount haddecreased as judged by SDSpage.Subsequently,the cultivation
+  temperature after inductionwas lowered to 20??C.Since the pElsystem wasidentified
+  as the one leading tohigher apparent specific activity,various other E. coli(DE3)
+  hostswere tested(see Tab.4).Comparing the results obtained for E.coliBL21(DE3)at
+  20??C(seeTab.4)with those obtained at25 'C(see Tab. 3), a fourfold improvement was
+  found. Host Ecoli Tuner(DE3)showed alsopromising high activity. UponSDS-page analysis,
+  almost no in-clusion bodies were detected.By leaving the cultivation con-ditions
+  identical(except for thecultivation time after induction.48 and 100 hours)it was
+  foundthat an induction time beyond48 hours was not beneficial(seeTab. 5). Finally,
+  an increase in apparentspecific activity was obtained bylowering the incubation
+  temperature prior to induction for allexcept for E.coliBL21(DE3)(see Tab. 6, first
+  four entries). Since SDS-page analy-sis confirmed that a significant amount of ADH-'A?ˉwaspresent,
+  it was envisaged that a shortage of cofactor mightbe limiting.Consequently, when
+  NADH was added to theassay, a further fivefold increase was indeed observed for
+  theapparent specific activity. In summary, best results were obtained using the
+  host Ecoli Tuner (DE3), reaching an apparent activity of 2.0 U/mgcells under optimized
+  reaction conditions for the reductionof acetophenone with simultaneous recycling
+  of the cofacto1at the expense of 2-propanol. For comparison, employingwild-type
+  cells, mere 0.006-0.03 U/mg cells were obtained.Overall, this corresponds to a 550-fold
+  improvement. 3.2 Reaction Parameters A crucial parameter in hydrogen transfer reactions
+  is toemploy a high concentration of the cosubstrate, i.e., 2-propa.nol (for reduction),
+  which has two roles: on the one hand, itshifts the redox equilibrium towards the
+  product side and.on the other hand, it increases the concentration of the substrate
+  in the aqueous phase by acting as solubilizer. SinceADH'A?ˉ can also be employed
+  in the reverse direction. i.e..the hydrogen transfer oxidation of sec-alcohols employingacetone
+  as cosubstrate(see Scheme 2), both redox modeswere tested. The results from the
+  optimization of ADH activity in hydrogen transfer reactions by variation of cultiva-tion
+  conditions as described above in carbonyl reduction andalcohol oxidation were identical.3.2.1
+  Cosolvent Concentration It has been noted before that partially purified ADH-'Acan
+  withstand 2-propanol at concentrations up to 50 % v/v inwhole resting cells of the
+  wild-type strain [11], and up to80 % v/v in partially purified form [12]. However,
+  ADH'Acloned into E. coli cells was expected to be less sturdy sincethe latter whole-cell
+  system would already collapse at lowerconcentrations of 2-propanol or acetone. Indeed,
+  high ADHactivity was observed only until 16 % v/v 2-propanol or ace-tone before
+  the apparent specific activity significantly de-creased(see Fig.1).Nevertheless,
+  ADH-activity was stillmeasurable at 60 % y/y of cosubstrate concentration.3.2.2
+  Temperature As previously observed, native ADH-'A?ˉ is active even upto 65 'C [12];
+  again, the E. coli/ADH-'A?ˉ collapsed at lowertemperature, namely, just above 40??C
+  (see Fig. 2), which canagain be attributed to the less stable E. coli host. For
+  curiosity,the hydrogen-transfer system was tested at low temperatures,i.e., below
+  0'C using 16 % v/v of cosubstrate. At -12??C theaqueous-organic system was still
+  liquid and, surprisingly, theenzyme was still active without significant loss of
+  activitywhich could be exploited for the transformation of chemicallylabile ketones/alcohols
+  at low temperature.3.2.3 Cofactor Concentration As mentioned above in the cultivation
+  study, the additionof cofactor to the reaction mixture had a significant influ.ence
+  on the apparent activity. The most obvious increase inactivity was found within
+  the range of 0 and 1 mM cofactor.with an optimum at 2 mM cofactor concentration.
+  However.further increase to 3 mM did not lead to further enhancement of activity(see
+  Fig. 3). 3.2.4 Substrate Concentration The maximum tolerable substrate concentration
+  was mea-sured by keeping the cosubstrate concentration at a constantlevel of 15
+  % v/v(acetone/2-propanol). The relative activityfor the oxidation of rac-1-phenylethanol
+  remained approxi.mately constant within experimental error. For the reductionof
+  acetophenone, however, a linear increase in activity up to1 M of substrate was observed.
+  3.2.5 Dependency on pH In contrast to ADH'A?ˉin whole wild-type cells, whichshowed
+  a broad pH optimum between pH 7.0 and 12.0 forthe oxidation as well as for the reduction
+  [16], purifiedADH-'A?ˉshowed two distinctive pH optima for the reduc-tion (pH 6.5)and
+  oxidation (pH 9)[12]. Similar to whole-cell transformations using the wild type,
+  the pH graphs forE. coli/ADH-'A' for the reduction and oxidation showed thesame
+  shape and were almost parallel (see Fig. 5), however,the optima were very sharp
+  at pH 7.5. By serendipity, the ac-tivity was also tested at pH <5 and, surprisingly,
+  activity wasfound within this pH range. The loss of activity at pH ~ 5.2fits very
+  well with the pI of ADH-'A?ˉ at ~ 5.1."
+raw_completion_output: |-
+  Here are the extracted entities in the requested format:
+
+  microbiome: Rhodococcus ruber; Escherichia coli
+  enzyme: ADH-'A'
+  substrate: 2-propanol; acetone; acetophenone; sec-alcohols; rac-1-phenylethanol
+  enzyme_productions: Escherichia coli | ADH-'A' | Conditions: effect:increase, temperature:25°C, IPTG concentration:2 mM, cultivation time:22 hours; Escherichia coli | ADH-'A' | Conditions: effect:increase, temperature:20°C, host:Ecoli Tuner(DE3), cultivation time:48 hours; Escherichia coli | ADH-'A' | Conditions: effect:increase, cofactor:NADH, concentration:2 mM
+  enzyme_activities: ADH-'A' | 2-propanol | Conditions: effect:enhance, temperature:40°C, cosubstrate concentration:16 % v/v; ADH-'A' | acetophenone | Conditions: effect:maximum, substrate concentration:1 M, cosubstrate concentration:15 % v/v; ADH-'A' | rac-1-phenylethanol
+prompt: |+
+  Split the following piece of text into fields in the following format:
+
+  subject: <Specify the enzyme involved in the catalysis. Do not change, only extract.>
+  predicate: <Specify the catalytic conditions, including pH, temperature, ions, surfactants, chemicals, effect, enzyme activity.  Do not change, only extract. If empty, this whole triple entry shoul be excluded from output.>
+  object: <Specify the substrate being catalyzed by the enzyme.  Do not change, only extract.>
+  qualifier: <Keep it empty, do not include in output.>
+  subject_qualifier: <Keep it empty, do not include in output.>
+  object_qualifier: <Keep it empty, do not include in output.>
+
+
+  Text:
+  ADH-'A' | rac-1-phenylethanol
+
+  ===
+
+extracted_object:
+  microbiome:
+    - AUTO:Rhodococcus%20ruber
+    - AUTO:Escherichia%20coli
+  enzyme:
+    - AUTO:ADH-%27A%27
+  substrate:
+    - AUTO:2-propanol
+    - AUTO:acetone
+    - AUTO:acetophenone
+    - AUTO:sec-alcohols
+    - AUTO:rac-1-phenylethanol
+  enzyme_productions:
+    - subject: AUTO:Escherichia%20coli
+      predicate:
+        temperature: 25°C
+        ph: not specified
+        substrate: not specified
+        incubation_period: 22 hours
+        medium: not specified
+        moisture: not specified
+        carbon_source: not specified
+        nitrogen_source: not specified
+        aeration: not specified
+        agitation: not specified
+        volume: not specified
+        effect: increase
+        quantitative_value: not specified
+      object: AUTO:ADH-%27A%27
+    - subject: AUTO:Escherichia%20coli
+      predicate:
+        temperature: 20°C
+        ph: not specified
+        substrate: not specified
+        incubation_period: 48 hours
+        medium: not specified
+        moisture: not specified
+        carbon_source: not specified
+        nitrogen_source: not specified
+        aeration: not specified
+        agitation: not specified
+        volume: not specified
+        effect: increase
+        quantitative_value: not specified
+      object: AUTO:ADH-%27A%27
+    - subject: AUTO:Escherichia%20coli
+      predicate:
+        temperature: not specified
+        ph: not specified
+        substrate: not specified
+        incubation_period: not specified
+        medium: not specified
+        moisture: not specified
+        carbon_source: not specified
+        nitrogen_source: not specified
+        aeration: not specified
+        agitation: not specified
+        volume: not specified
+        effect: increase
+        quantitative_value: not specified
+      object: AUTO:ADH-%27A%27
+  enzyme_activities:
+    - subject: AUTO:ADH-%27A%27
+      predicate:
+        ph: not specified
+        temperature: 40°C
+        ions: not specified
+        surfactants: not specified
+        chemicals: not specified
+        effect: enhance
+        quantitative_value: not specified
+        substrate_concentration: 'not specified (note: cosubstrate concentration is
+          given as 16% v/v, but substrate concentration is not specified)'
+      object: AUTO:2-propanol
+    - subject: AUTO:ADH-%27A%27
+      predicate:
+        ph: not specified
+        temperature: not specified
+        ions: not specified
+        surfactants: not specified
+        chemicals: not specified
+        effect: maximum
+        quantitative_value: not specified
+        substrate_concentration: 1 M
+      object: AUTO:acetophenone
+    - subject: AUTO:ADH-%27A%27
+named_entities:
+  - id: AUTO:Rhodococcus%20ruber
+    label: Rhodococcus ruber
+    original_spans:
+      - 135:151
+      - 224:240
+  - id: AUTO:Escherichia%20coli
+    label: Escherichia coli
+    original_spans:
+      - 166:181
+      - 399:414
+  - id: AUTO:ADH-%27A%27
+    label: ADH-'A'
+    original_spans:
+      - 122:128
+      - 8028:8034
+  - id: AUTO:2-propanol
+    label: 2-propanol
+    original_spans:
+      - 656:665
+      - 1332:1341
+      - 4658:4667
+      - 5667:5676
+      - 5968:5977
+      - 6049:6058
+      - 7420:7429
+  - id: AUTO:acetone
+    label: acetone
+    original_spans:
+      - 668:674
+      - 5303:5309
+      - 5982:5988
+      - 7412:7418
+  - id: AUTO:acetophenone
+    label: acetophenone
+    original_spans:
+      - 4584:4595
+      - 7575:7586
+  - id: AUTO:sec-alcohols
+    label: sec-alcohols
+    original_spans:
+      - 5281:5292
+  - id: AUTO:rac-1-phenylethanol
+    label: rac-1-phenylethanol
+    original_spans:
+      - 7475:7493
