@@ -2,6 +2,7 @@
 a evidence-based Question-Answering system：Microbial Enzyme Production and Catalytic Activit
 ## Technical Architecture
 MEPAM_NER:Named Entity Recognition based on OntoGPT
+
 MEPAM_QA：Question-Answering System based on GraphRAG
 ## Quick Start
 ## MEPAM_NER
