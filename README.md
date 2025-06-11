@@ -1,4 +1,4 @@
-# MEPAM
+ # MEPAM
 a evidence-based Question-Answering system：Microbial Enzyme Production and Catalytic Activit
 ## Technical Architecture
 MEPAM_NER:Named Entity Recognition based on OntoGPT
@@ -61,7 +61,7 @@ cd MEPAM_QA
 sh index_builder.sh
 ```
 3.2  Knowledge graph database
-在使用NER模块生成yaml文件后可以使用下面的代码生成三元组结构并导入nebulagraph,你可以在附表S7 S8中找到本文中全部的三元组数据。
+After generating the YAML file using the NER module, you can use the following code to generate the triplet structure and import it into NebulaGraph. You can find all the triplet data from this article in Supplementary Tables S7 and S8.
 ```bash
 python yaml2nebula_tsv.py  yaml2tsv.ini
 python nebula_create.py
