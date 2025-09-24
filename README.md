@@ -1,9 +1,11 @@
  # MEPAM
-a evidence-based Question-Answering system：Microbial Enzyme Production and Catalytic Activit
+a evidence-based Question-Answering system：Microbial Enzyme Production and Catalytic Activite
+MEPAM is available at http://180.76.108.212.
 ## Technical Architecture
 MEPAM_NER:Named Entity Recognition based on OntoGPT
 
-MEPAM_QA：Question-Answering System based on GraphRAG
+MEPAM_QA：Question-Answering System based on GraphRAG 
+
 ## Quick Start
 ## MEPAM_NER
 You can quickly build a knowledge graph using MEPAM_NER. If you only need to use the QA system, you can skip to the MEPAM_QA section.
